@@ -1,0 +1,321 @@
+{% extends 'main/base.html' %} {% load static %} {% block content %}
+<section id="portfolio" class="site-section section-portfolio">
+  <div class="container">
+    <div class="text-center">
+      <h3>My recent Works</h3>
+      <img src="{% static 'img/lines.svg' %}" class="img-lines" alt="lines" />
+    </div>
+    <div class="row">
+      <h3>Back-End Projects</h3>
+      <div class="col-md-4 col-xs-6">
+        <div class="portfolio-item">
+          <img src="{% static 'img/shop-now.PNG' %}" class="img-res" alt="" />
+          <div class="portfolio-item-info">
+            <h4>E-Commerce Site</h4>
+            <a href="#" data-toggle="modal" data-target="#portfolioItem1"
+              ><span class="glyphicon glyphicon-eye-open"></span
+            ></a>
+            <a href="https://shop45.herokuapp.com/" target="_blank"
+              ><span class="glyphicon glyphicon-link"></span
+            ></a>
+          </div>
+          <!-- /.portfolio-item-info -->
+        </div>
+        <!-- /.portfolio-item -->
+      </div>
+      <div class="col-md-4 col-xs-6">
+        <div class="portfolio-item">
+          <img src="{% static 'img/to-do.PNG' %}" class="img-res" alt="" />
+          <div class="portfolio-item-info">
+            <h4>To-Do App</h4>
+            <a href="#" data-toggle="modal" data-target="#portfolioItem2"
+              ><span class="glyphicon glyphicon-eye-open"></span
+            ></a>
+            <a
+              href="https://todo455.herokuapp.com/login/?next=/"
+              target="_blank"
+              ><span class="glyphicon glyphicon-link"></span
+            ></a>
+          </div>
+          <!-- /.portfolio-item-info -->
+        </div>
+        <!-- /.portfolio-item -->
+      </div>
+      <div class="col-md-4 col-xs-6">
+        <div class="portfolio-item">
+          <img src="{% static 'img/blog.PNG' %}" class="img-res" alt="" />
+          <div class="portfolio-item-info">
+            <h4>Blog App</h4>
+            <a href="#" data-toggle="modal" data-target="#portfolioItem3"
+              ><span class="glyphicon glyphicon-eye-open"></span
+            ></a>
+            <a href="https://blogapp455.herokuapp.com/" target="_blank"
+              ><span class="glyphicon glyphicon-link"></span
+            ></a>
+          </div>
+          <!-- /.portfolio-item-info -->
+        </div>
+        <!-- /.portfolio-item -->
+      </div>
+      <h4>Front-End Designs</h4>
+      <div class="col-md-4 col-xs-6">
+        <div class="portfolio-item">
+          <img src="{% static 'img/food.PNG' %}" class="img-res" alt="" />
+          <div class="portfolio-item-info">
+            <h4>Food-Blog</h4>
+            <a href="#" data-toggle="modal" data-target="#portfolioItem4"
+              ><span class="glyphicon glyphicon-eye-open"></span
+            ></a>
+            <a href="https://gulsabafiha.github.io/Food-Blog/" target="_blank"
+              ><span class="glyphicon glyphicon-link"></span
+            ></a>
+          </div>
+          <!-- /.portfolio-item-info -->
+        </div>
+        <!-- /.portfolio-item -->
+      </div>
+      <div class="col-md-4 col-xs-6">
+        <div class="portfolio-item">
+          <img src="{% static 'img/shab.PNG' %}" class="img-res" alt="" />
+          <div class="portfolio-item-info">
+            <h4>Shab-naz fashion</h4>
+            <a href="#" data-toggle="modal" data-target="#portfolioItem5"
+              ><span class="glyphicon glyphicon-eye-open"></span
+            ></a>
+            <a
+              href="https://gulsabafiha.github.io/Bootstrap_project/"
+              target="_blank"
+              ><span class="glyphicon glyphicon-link"></span
+            ></a>
+          </div>
+          <!-- /.portfolio-item-info -->
+        </div>
+        <!-- /.portfolio-item -->
+      </div>
+      <div class="col-md-4 col-xs-6">
+        <div class="portfolio-item">
+          <img src="{% static 'img/card.PNG' %}" class="img-res" alt="" />
+          <div class="portfolio-item-info">
+            <h4>Sekweed-Card</h4>
+            <a href="#" data-toggle="modal" data-target="#portfolioItem6"
+              ><span class="glyphicon glyphicon-eye-open"></span
+            ></a>
+            <a
+              href="https://gulsabafiha.github.io/Sekwed_card_css/"
+              target="_blank"
+              ><span class="glyphicon glyphicon-link"></span
+            ></a>
+          </div>
+          <!-- /.portfolio-item-info -->
+        </div>
+        <!-- /.portfolio-item -->
+      </div>
+    </div>
+  </div>
+</section>
+<section class="site-section section-counters text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-xs-12">
+        <p class="counter start" data-to="2" data-speed="2000">2</p>
+        <h4>Years Experience</h4>
+      </div>
+
+      <div class="col-sm-4 col-xs-12">
+        <p
+          id="infinity"
+          class="counter"
+          data-from="0"
+          data-to="1"
+          data-speed="1000"
+        >
+          0
+        </p>
+        <h4>Seconds on this site!<br />What are you waiting for?</h4>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="portfolioItem1" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <a class="close" data-dismiss="modal"
+          ><span class="glyphicon glyphicon-remove"></span
+        ></a>
+        <img class="img-res" src="{% static 'img/shop-now.PNG' %}" alt="" />
+      </div>
+      <div class="modal-body">
+        <h4 class="modal-title">E-Commerce Site</h4>
+        <p>
+          This is a E-Commerce site using Python adn Django. This is Fully
+          backend build Site. I also take care about It's frontend.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <a
+          href="https://shop45.herokuapp.com/"
+          target="_blank"
+          class="btn btn-fill"
+          >Visit Page</a
+        >
+      </div>
+    </div>
+    <!-- /.modal-content -->
+  </div>
+  <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+
+<div id="portfolioItem2" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <a class="close" data-dismiss="modal"
+          ><span class="glyphicon glyphicon-remove"></span
+        ></a>
+        <img class="img-res" src="{% static 'img/to-do.PNG' %}" alt="" />
+      </div>
+      <div class="modal-body">
+        <h4 class="modal-title">To-Do App</h4>
+        <p>
+          This is a To-do Application. It is fully functioned To-do application.
+          We can create out task and remove. It's also made using By Python and
+          Django. And For It's Front End I used Advanced CSS.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <a
+          href="https://todo455.herokuapp.com/login/?next=/"
+          target="_blank"
+          class="btn btn-fill"
+          >Visit Page</a
+        >
+      </div>
+    </div>
+    <!-- /.modal-content -->
+  </div>
+  <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+
+<div id="portfolioItem3" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <a class="close" data-dismiss="modal"
+          ><span class="glyphicon glyphicon-remove"></span
+        ></a>
+        <img class="img-res" src="{% static 'img/blog.PNG' %}" alt="" />
+      </div>
+      <div class="modal-body">
+        <h4 class="modal-title">Blog Project</h4>
+        <p>
+          This is a Blog site which i made by using Python & Django. It's also
+          fully functioned site. One can create user profile and login. After
+          Logged in, one can post their thoughts as a post in this site.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <a
+          href="https://blogapp455.herokuapp.com/"
+          target="_blank"
+          class="btn btn-fill"
+          >Visit Page</a
+        >
+      </div>
+    </div>
+    <!-- /.modal-content -->
+  </div>
+  <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+
+<div id="portfolioItem4" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <a class="close" data-dismiss="modal"
+          ><span class="glyphicon glyphicon-remove"></span
+        ></a>
+        <img class="img-res" src="{% static 'img/food.PNG' %}" alt="" />
+      </div>
+      <div class="modal-body">
+        <h4 class="modal-title">Food-Blog</h4>
+        <p>
+          This is a front end design using Html5 and CSS3. It is fully
+          responsive website Here I use some animation of CSS.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <a
+          href="https://gulsabafiha.github.io/Food-Blog/"
+          target="_blank"
+          class="btn btn-fill"
+          >Visit Page</a
+        >
+      </div>
+    </div>
+    <!-- /.modal-content -->
+  </div>
+  <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+
+<div id="portfolioItem5" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <a class="close" data-dismiss="modal"
+          ><span class="glyphicon glyphicon-remove"></span
+        ></a>
+        <img class="img-res" src="{% static 'img/shab.PNG' %}" alt="" />
+      </div>
+      <div class="modal-body">
+        <h4 class="modal-title">Shab-Naz Fashion</h4>
+        <p>It's only a landing page using HTML5,CSS3 and Bootstrap.</p>
+      </div>
+      <div class="modal-footer">
+        <a
+          href="https://gulsabafiha.github.io/Bootstrap_project/"
+          target="_blank"
+          class="btn btn-fill"
+          >Visit Page</a
+        >
+      </div>
+    </div>
+    <!-- /.modal-content -->
+  </div>
+  <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+
+<div id="portfolioItem6" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <a class="close" data-dismiss="modal"
+          ><span class="glyphicon glyphicon-remove"></span
+        ></a>
+        <img class="img-res" src="{% static 'img/card.PNG' %}" alt="" />
+      </div>
+      <div class="modal-body">
+        <h4 class="modal-title">Seekweed Card Design</h4>
+        <p>This is made by advanced css only. Card design.</p>
+      </div>
+      <div class="modal-footer">
+        <a
+          href="https://gulsabafiha.github.io/Sekwed_card_css/"
+          target="_blank"
+          class="btn btn-fill"
+          >Visit Page</a
+        >
+      </div>
+    </div>
+    <!-- /.modal-content -->
+  </div>
+  <!-- /.modal-dialog -->
+</div>
+
+{% endblock content %}

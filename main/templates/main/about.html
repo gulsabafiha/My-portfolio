@@ -1,0 +1,123 @@
+{% extends 'main/base.html' %} {% load static %} {% block content %}
+
+<section id="about" class="site-section section-about text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <h2>About</h2>
+        <img src="{% static 'img/lines.svg' %}" class="img-lines" alt="lines" />
+        <p>
+          Hello! I'm Gulsaba Fiha, a Full Stack Developer, a Python enthusiast,
+          and a coder slighty obsessed for code quality. In Front End I can
+          create fully responsive websites for any devices. I’m currently
+          available for Job. If you find me fit for Your position, then get in
+          touch.
+        </p>
+        <a
+          href="https://drive.google.com/file/d/1Yeq_jh4vsn2YJ1iN5AqdrO_m995ZK0AE/view?usp=sharing"
+          class="btn btn-fill"
+          target="_blank"
+          download
+          >Download my cv</a
+        >
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="site-section section-skills">
+  <div class="container">
+    <div class="text-center">
+      <h3>My Skills</h3>
+      <img src="{% static 'img/lines.svg' %}" class="img-lines" alt="lines" />
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="skill">
+          <h4>Html/Css</h4>
+          <div class="progress">
+            <div
+              class="progress-bar"
+              role="progressbar"
+              data-transitiongoal="90"
+            ></div>
+            <!-- /.progress-bar -->
+          </div>
+          <!-- /.progress -->
+        </div>
+        <!-- /.skill -->
+        <div class="skill">
+          <h4>Python</h4>
+          <div class="progress">
+            <div
+              class="progress-bar"
+              role="progressbar"
+              data-transitiongoal="75"
+            ></div>
+            <!-- /.progress-bar -->
+          </div>
+          <!-- /.progress -->
+        </div>
+        <!-- /.skill -->
+      </div>
+      <div class="col-md-4">
+        <div class="skill">
+          <h4>Django</h4>
+          <div class="progress">
+            <div
+              class="progress-bar"
+              role="progressbar"
+              data-transitiongoal="85"
+            ></div>
+            <!-- /.progress-bar -->
+          </div>
+          <!-- /.progress -->
+        </div>
+        <!-- /.skill -->
+        <div class="skill">
+          <h4>Django Rest Framework</h4>
+          <div class="progress">
+            <div
+              class="progress-bar"
+              role="progressbar"
+              data-transitiongoal="85"
+            ></div>
+            <!-- /.progress-bar -->
+          </div>
+          <!-- /.progress -->
+        </div>
+        <!-- /.skill -->
+      </div>
+      <div class="col-md-4">
+        <div class="skill">
+          <h4>Bootstrap</h4>
+          <div class="progress">
+            <div
+              class="progress-bar"
+              role="progressbar"
+              data-transitiongoal="80"
+            ></div>
+            <!-- /.progress-bar -->
+          </div>
+          <!-- /.progress -->
+        </div>
+        <!-- /.skill -->
+        <div class="skill">
+          <h4>Javascript(leraning)</h4>
+          <div class="progress">
+            <div
+              class="progress-bar"
+              role="progressbar"
+              data-transitiongoal="45"
+            ></div>
+            <!-- /.progress-bar -->
+          </div>
+          <!-- /.progress -->
+        </div>
+        <!-- /.skill -->
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock content %}

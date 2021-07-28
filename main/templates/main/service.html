@@ -1,0 +1,39 @@
+{% extends 'main/base.html' %} {% load static %} {% block content %}
+<section id="service" class="site-section section-services overlay text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h3>What i do</h3>
+        <img src="{% static 'img/lines.svg' %}" class="img-lines" alt="lines" />
+      </div>
+      <div class="col-sm-4">
+        <div class="service">
+          <img
+            src="{% static 'img/front-end.svg' %}"
+            alt="Front End Developer"
+          />
+          <h4>Front-End</h4>
+          <p>
+            As a Front-End developer, I have experience in HTML5 and CSS3
+            techniques working with jQuery or more advanced frameworks such as
+            Bootstrap And Tailwind. Also lerning JavaScript And It's Framework
+            React JS.
+          </p>
+        </div>
+        <!-- /.service -->
+      </div>
+      <div class="col-sm-6">
+        <div class="service">
+          <img src="{% static 'img/back-end.svg' %}" alt="Back End Developer" />
+          <h4>Back-End</h4>
+          <p>
+            Utilising Python framework such as Django. I have Created some
+            Project using Django, I also know It's REST APIs.
+          </p>
+        </div>
+        <!-- /.service -->
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock content %}

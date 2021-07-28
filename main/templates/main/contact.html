@@ -1,0 +1,23 @@
+{% extends 'main/base.html' %} {% load static %} {% block content%}
+<section id="contact" class="site-section section-form text-center">
+  <div class="container">
+    <h3>Contact</h3>
+    <img src="{% static 'img/lines.svg' %}" class="img-lines" alt="lines" />
+    <form action="" method="post" novalidate>
+      {% csrf_token %} {% for fm in form %}
+      <div class="form-group">
+        {{fm.label_tag}} {{fm}}
+        <small class="text-warning"> {{fm.errors|striptags}}</small>
+      </div>
+      {% endfor %}
+      <button href="#" class="btn btn-border" type="submit">
+        Hire Me <span class="glyphicon glyphicon-send"></span>
+      </button>
+      {% if form.non_field_errors %} {% for error in form.non_field_errors %}
+      <p class="alert alert-danger my-3">{{error}}</p>
+      {% endfor %} {% endif %}
+    </form>
+  </div>
+</section>
+
+{% endblock content%}
